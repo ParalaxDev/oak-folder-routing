@@ -1,4 +1,4 @@
-import { green, blue, gray, format, bold, red, yellow, walk, cyan } from "deps.ts"
+import { green, blue, gray, format, bold, red, yellow, walk, cyan } from "./deps.ts"
 
 export const logger = async (
   { response, request }: { response: any; request: any },
