@@ -23,7 +23,7 @@ for await (const walkEntry of walk("./src/endpoints")) {
       return section.split(".")[0]
     })
 
-    const { GET, HEAD, POST, PUT, DELETE, OPTIONS, PATCH, TRACE } = await import(`../../${walkEntry.path}`)
+    const { GET, HEAD, POST, PUT, DELETE, OPTIONS, PATCH, TRACE } = await import(`./${walkEntry.path}`)
     const m = [
       ["GET", GET],
       ["HEAD", HEAD],
